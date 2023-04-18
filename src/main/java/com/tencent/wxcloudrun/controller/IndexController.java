@@ -16,13 +16,13 @@ public class IndexController {
      *
      * @return API response html
      */
-    @GetMapping
+    @GetMapping(value = "/index")
     public String index() {
         return "index";
     }
 
 
-    @GetMapping
+    @GetMapping(value = "/health")
     public ApiResponse health() {
         return ApiResponse.ok("Hi , I'm robin's program. ");
     }
